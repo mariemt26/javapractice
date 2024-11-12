@@ -11,6 +11,11 @@ public class Calculator{
         String[] operatorString = expression.split(" ");
 
 
+        if (operatorString.length < 3 || operatorString.length % 2 == 0) {
+          System.out.println("Invalid expression. Please enter a valid expression.");
+          return;
+        }
+
         int result = Integer.parseInt(operatorString[0]);
         for(int i = 0; i < operatorString.length; i++){
 
