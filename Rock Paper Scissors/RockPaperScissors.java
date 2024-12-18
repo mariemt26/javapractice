@@ -9,7 +9,18 @@ public class RockPaperScissors {
 
         String playerMove = scanner.nextLine();
 
-        System.out.println(playerMove);
+        Random random = new Random();
+
+        int randNum = random.nextInt(3);
+
+        String compMove;
+        if (randNum == 0) {
+            compMove = "rock";
+        } else if (randNum == 1) {
+            compMove = "paper";
+        } else {
+            compMove = "scissors";
+        }
 
     }
 }
